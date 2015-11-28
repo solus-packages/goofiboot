@@ -1,0 +1,24 @@
+name       : goofiboot
+version    : 49
+release    : 1
+source     :
+    - https://github.com/solus-project/goofiboot/releases/download/v49/goofiboot-49.tar.xz : 6255bc43efd55c4291af626e2639b606ee173bd4a66a7c6c048ca7e30a06e092
+license    : LGPL-2.1
+summary    : UEFI boot loader
+description: |
+    goofiboot executes EFI images. The default entry is selected by a configured
+    pattern (glob) or an on-screen menu.
+    
+    goofiboot operates on the EFI System Partition (ESP) only. Configuration
+    file fragments, kernels, initrds, other EFI images need to reside on the
+    ESP. Linux kernels must be built with CONFIG_EFI_STUB to be able to be
+    directly executed as an EFI image.
+builddeps  :
+    - pkgconfig(blkid)
+    - gnu-efi-devel
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
