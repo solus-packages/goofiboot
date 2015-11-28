@@ -1,8 +1,8 @@
 name       : goofiboot
-version    : 49
-release    : 1
+version    : 50
+release    : 2
 source     :
-    - https://github.com/solus-project/goofiboot/releases/download/v49/goofiboot-49.tar.xz : 6255bc43efd55c4291af626e2639b606ee173bd4a66a7c6c048ca7e30a06e092
+    - https://github.com/solus-project/goofiboot/releases/download/v50/goofiboot-50.tar.xz : de4f1d494a2e30fc12022386e909f39c3def008d8cc08856680e992e9ea871ab
 license    : LGPL-2.1
 summary    : UEFI boot loader
 description: |

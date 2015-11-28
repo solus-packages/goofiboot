@@ -30,15 +30,15 @@ directly executed as an EFI image.
 </Description>
         <PartOf>system.boot</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/goofiboot</Path>
             <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib64/goofiboot</Path>
             <Path fileType="man">/usr/share/man</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2015-11-28</Date>
-            <Version>49</Version>
+            <Version>50</Version>
             <Comment>Packaging update</Comment>
             <Name>Ikey Doherty</Name>
             <Email>ikey@solus-project.com</Email>
