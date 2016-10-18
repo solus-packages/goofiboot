@@ -1,14 +1,15 @@
 name       : goofiboot
-version    : 50
-release    : 2
+version    : 51
+release    : 3
 source     :
-    - https://github.com/solus-project/goofiboot/releases/download/v50/goofiboot-50.tar.xz : de4f1d494a2e30fc12022386e909f39c3def008d8cc08856680e992e9ea871ab
+    - https://github.com/solus-project/goofiboot/releases/download/v51/goofiboot-51.tar.xz : b38ff95faddeba615435fd2088e95bb7bef24544d96007b26c27a86a35bcdd4d
 license    : LGPL-2.1
 summary    : UEFI boot loader
+component  : system.boot
 description: |
     goofiboot executes EFI images. The default entry is selected by a configured
     pattern (glob) or an on-screen menu.
-    
+
     goofiboot operates on the EFI System Partition (ESP) only. Configuration
     file fragments, kernels, initrds, other EFI images need to reside on the
     ESP. Linux kernels must be built with CONFIG_EFI_STUB to be able to be
